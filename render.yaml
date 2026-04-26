@@ -1,0 +1,21 @@
+services:
+  - type: web
+    name: fairscan-backend
+    env: docker
+    dockerfilePath: ./backend/Dockerfile
+    dockerContext: ./backend
+    envVars:
+      - key: GEMINI_API_KEY
+        value: AIzaSyBEav2J5vzguzVEh4XNqxc4ytW429hVZHA
+      - key: ALLOWED_ORIGINS
+        value: "['http://localhost:3000', 'https://fairscan.web.app', 'https://fairscan-frontend.onrender.com']"
+
+  - type: web
+    name: fairscan-frontend
+    env: static
+    buildCommand: bash ./frontend/build_flutter.sh
+    staticPublishPath: ./frontend/build/web
+    routes:
+      - type: rewrite
+        source: /*
+        destination: /index.html
