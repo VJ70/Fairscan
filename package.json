@@ -2,6 +2,6 @@
   "name": "fairscan-frontend",
   "version": "1.0.0",
   "scripts": {
-    "build": "bash frontend/build_flutter.sh"
+    "build": "bash build.sh"
   }
 }

@@ -3,8 +3,7 @@ import 'package:firebase_auth/firebase_auth.dart';
 import '../models/audit_result.dart';
 
 class ApiService {
-  static const String _baseUrl =
-      String.fromEnvironment('https://vj7-7-fairscan-backend.hf.space', defaultValue: 'http://localhost:8080/api/v1');
+  static const String _baseUrl = 'https://vj7-7-fairscan-backend.hf.space/api/v1';
 
   late final Dio _dio;
 
