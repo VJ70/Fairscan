@@ -3,8 +3,8 @@ set -e
 
 # Download Flutter
 echo "Downloading Flutter..."
-git clone https://github.com/flutter/flutter.git -b stable ../flutter
-export PATH="$PATH:`pwd`/../flutter/bin"
+git clone https://github.com/flutter/flutter.git -b stable .flutter-sdk
+export PATH="$PATH:`pwd`/.flutter-sdk/bin"
 
 # Enable web
 flutter config --enable-web
