@@ -18,10 +18,10 @@ ENV HOME=/home/user \
 
 WORKDIR $HOME/app
 
-COPY --chown=user requirements.txt .
+COPY --chown=user backend/requirements.txt .
 RUN pip install --no-cache-dir -r requirements.txt
 
-COPY --chown=user . .
+COPY --chown=user backend/ .
 
 ENV PORT=7860
 EXPOSE 7860
