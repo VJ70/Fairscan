@@ -1,14 +1,5 @@
----
-title: Fairscan Backend
-emoji: 🚀
-colorFrom: blue
-colorTo: green
-sdk: docker
-pinned: false
----
-# FairScan — AI Fairness Auditor
-> Google Solution Challenge 2026 · SDG 10: Reduced Inequalities · SDG 16: Peace & Justice
 
+# FairScan — AI Fairness Auditor
 FairScan lets any organisation upload their AI decision dataset (hiring, loans, healthcare) and instantly receive a plain-language bias audit report powered by Gemini AI — no coding required.
 
 ---
@@ -57,14 +48,6 @@ cd backend
 cp .env.example .env   # fill in your keys
 pip install -r requirements.txt
 uvicorn app.main:app --reload
-```
-
-### 3. Deploy backend
-```bash
-gcloud run deploy fairscan-api \
-  --source . \
-  --region asia-south1 \
-  --allow-unauthenticated
 ```
 
 ### 4. Flutter frontend
