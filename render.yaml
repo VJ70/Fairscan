@@ -6,9 +6,17 @@ services:
     dockerContext: ./backend
     envVars:
       - key: GEMINI_API_KEY
-        value: AIzaSyBEav2J5vzguzVEh4XNqxc4ytW429hVZHA
+        sync: false
       - key: ALLOWED_ORIGINS
         value: "['http://localhost:3000', 'https://fairscan.web.app', 'https://fairscan-frontend.onrender.com']"
+      - key: GCP_PROJECT
+        value: fairscan-2026-8a945
+      - key: VERTEX_AI_LOCATION
+        value: asia-south1
+      - key: FIREBASE_SERVICE_ACCOUNT
+        value: /etc/secrets/serviceAccount.json
+      - key: BIGQUERY_DATASET
+        value: fairscan_analytics
 
   - type: web
     name: fairscan-frontend
