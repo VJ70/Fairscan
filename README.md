@@ -1,3 +1,11 @@
+---
+title: Fairscan Backend
+emoji: 🚀
+colorFrom: blue
+colorTo: green
+sdk: docker
+pinned: false
+---
 # FairScan — AI Fairness Auditor
 > Google Solution Challenge 2026 · SDG 10: Reduced Inequalities · SDG 16: Peace & Justice
 
