@@ -1,0 +1,31 @@
+name: fairscan
+description: FairScan — AI Fairness Auditor | Google Solution Challenge 2026
+version: 1.0.0+1
+publish_to: none
+
+environment:
+  sdk: '>=3.3.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  firebase_core: ^2.30.1
+  firebase_auth: ^4.19.5
+  cloud_firestore: ^4.17.2
+  firebase_storage: ^11.7.4
+  cloud_functions: ^4.7.3
+  google_sign_in: ^6.2.1
+  file_picker: ^8.0.3
+  fl_chart: ^0.67.0
+  cupertino_icons: ^1.0.6
+  shimmer: ^3.0.0
+  provider: ^6.1.2
+  intl: ^0.19.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^4.0.0
+
+flutter:
+  uses-material-design: true
