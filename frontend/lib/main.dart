@@ -29,7 +29,7 @@ class FairScanApp extends StatelessWidget {
             brightness: Brightness.light,
           ),
           useMaterial3: true,
-          fontFamily: 'Inter',
+         
         ),
         darkTheme: ThemeData(
           colorScheme: ColorScheme.fromSeed(
@@ -37,7 +37,7 @@ class FairScanApp extends StatelessWidget {
             brightness: Brightness.dark,
           ),
           useMaterial3: true,
-          fontFamily: 'Inter',
+         
         ),
         home: const AuthWrapper(),
       ),
