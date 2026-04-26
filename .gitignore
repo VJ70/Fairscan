@@ -31,3 +31,4 @@ frontend/pubspec.lock
 .vscode/
 *.swp
 .DS_Store
+frontend/assets/fonts/
