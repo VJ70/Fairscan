@@ -60,11 +60,3 @@ flutter build web && firebase deploy --only hosting
 ```
 
 ---
-
-## SDG Alignment
-- **SDG 10** — Reduced Inequalities
-- **SDG 16** — Peace, Justice & Strong Institutions  
-- **SDG 8** — Decent Work & Economic Growth
-
-## License
-MIT
